@@ -11,7 +11,7 @@ this is a static site that runs on an almalinux server, served by nginx.
 sudo ln -fs /var/www/antimonopoly.club/nginx/antimonopoly.club.bootstrap /etc/nginx/conf.d/antimonopoly.club.bootstrap
 
 # ensure nginx config context is httpd_config_t
-sudo chcon -t httpd_config_t /etc/nginx/conf.d/antimonopoly.club.conf
+sudo chcon -t httpd_config_t /etc/nginx/conf.d/antimonopoly.club.bootstrap
 sudo semanage fcontext -a -t httpd_config_t "/etc/nginx/conf.d(/.*)?"
 sudo restorecon -Rv /etc/nginx/conf.d
 
