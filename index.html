@@ -16,15 +16,14 @@
             font-family: 'Noto Serif', Georgia, serif;
             line-height: 1.6;
             max-width: 800px;
-            margin: 40px auto;
+            margin: 0 auto;
             padding: 0 20px;
             color: #333;
             background-color: #f7f3eb;
-        }
-
-        h1 {
-            color: #1a1a1a;
-            margin-bottom: 1.5em;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         p {
@@ -36,31 +35,48 @@
             font-size: 0.9em;
             margin-top: 3em;
         }
+
+        a {
+            color: inherit;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 1em 0;
+            background: none;
+            border: 2px solid #333;
+            color: #333;
+            text-decoration: none;
+            font-style: normal;
+            cursor: pointer;
+            font-family: inherit;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .button:hover {
+            background-color: #333;
+            color: #f7f3eb;
+        }
     </style>
 </head>
 
 <body>
-    <h1>The Antimonopoly Club is a collective of lawyers and people who build products to tackle monopolies directly: by
-        creating competition.
-    </h1>
+    <p><b>Antimonopoly Club</b> is a collective of lawyers and people who build products to tackle monopolies
+        directly: by creating competition.</p>
 
-    <p>
-        We commit to build and litigate towards systemic change to align value creation with profit. We believe that
-        anyone who
-        has a good idea and can build a good product should be able to enter the market without being blocked by large
-        sellers
-        or buyers. We stand for the right to repair, and the right to integrate proprietary hardware with other systems.
-        We want
-        people everywhere to be able to save money, generate less waste, and live easier lives.
-    </p>
+    <p>We commit to building and litigating towards systemic change to align value creation with profit. We believe
+        that anyone who has a good idea and can build a good product should be able to enter the market without being
+        blocked by large sellers or buyers. We stand for the right to repair, and the right to integrate proprietary
+        hardware with other systems. We want people everywhere to be able to save money, generate less waste, and live
+        easier lives.</p>
 
-    <p>
-        Want to join? Tell us about yourself and your interests.
-    </p>
+    <a href="https://forms.gle/TzMjJUvYhgpyfi7R6" class="button">Join us</a>
 
-    <p class="keywords">
-        Other key words: Section 1201, Matt Stoller, antitrust, democracy
-    </p>
+    <p class="keywords">Other key words: Section 1201, Matt Stoller, antitrust, democracy</p>
 </body>
 
 </html>
