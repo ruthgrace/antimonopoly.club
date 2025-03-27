@@ -1,9 +1,17 @@
 server {
-    listen 80;
-    server_name antimonopoly.club www.antimonopoly.club;
-    root /var/www/antimonopoly.club/public;
+	listen 80;
+    listen [::]:80;
+	server_name antimonopoly.club www.antimonopoly.club;
+
+    # Set global root
+    root /var/www/antimonopoly.club;
 
     location / {
-        try_files $uri $uri/ =404;
+        index index.html;
     }
-} 
+
+    location /.well-known/acme-challenge/ {
+        allow all;
+        try_files $uri =404;
+    }
+}
