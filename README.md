@@ -30,9 +30,4 @@ sudo ln -fs /var/www/antimonopoly.club/nginx/antimonopoly.club.conf /etc/nginx/c
 sudo service nginx reload
 ```
 
-This will:
-1. Set up the initial nginx config with the bootstrap file
-2. Configure SELinux contexts properly
-3. Obtain SSL certificates
-4. Switch to the main nginx config with HTTPS enabled
 
